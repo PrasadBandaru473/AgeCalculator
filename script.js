@@ -7,7 +7,7 @@ let errorMsg = document.querySelector(".error");
 todayDate.innerText = getDate();
 function getDate() {
     if(currentDate < 10) currentDate = '0' + currentDate;
-    if(currentMonth < 10) currentMonth = "0" + currentMonth;
+    if((currentMonth + 1) < 10) currentMonth = "0" + (currentMonth + 1);
     return `${currentDate}/${currentMonth}/${currentYear}`;
 }
 errorMsg.style.display = "none";
