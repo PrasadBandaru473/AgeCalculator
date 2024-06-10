@@ -1,6 +1,6 @@
 let date = new Date();
 let currentYear = date.getFullYear();
-let currentMonth = date.getMonth() + 1;
+let currentMonth = date.getMonth();
 let currentDate = date.getDate();
 let todayDate = document.getElementById("todayDate");
 let errorMsg = document.querySelector(".error");
